@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a solution to the Intro section with dropdown navigation challenge on Frontend Mentor"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./static/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./static/css/style.css" />
+
+    <script src="./static/js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="primary-header flex fs-nav">
+      <div class="overlay"></div>
+      <div class="logo">
+        <img src="./static/images/logo.svg" alt="snap logo" />
+      </div>
+      <button
+        aria-controls="primary-navigation"
+        class="hamburger-menu"
+        type="button"
+      >
+        <span class="sr-only">menu</span>
+      </button>
+      <nav id="primary-navigation" class="primary-navigation flex">
+        <ul role="list" class="nav-list flex">
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-item--button">Features</a>
+            <ul
+              data-anchor="right"
+              role="list"
+              class="nav-list nav-list--collapse flex"
+            >
+              <li class="nav-item flex">
+                <img
+                  src="./static/images/icon-todo.svg"
+                  alt="todo list icon"
+                  class="nav-icon"
+                />
+                <a href="#" class="nav-link">Todo List</a>
+              </li>
+              <li class="nav-item flex">
+                <img
+                  src="./static/images/icon-calendar.svg"
+                  alt="calendar icon"
+                  class="nav-icon"
+                />
+                <a href="#" class="nav-link">Calendar</a>
+              </li>
+              <li class="nav-item flex">
+                <img
+                  src="./static/images/icon-reminders.svg"
+                  alt="reminders icon"
+                  class="nav-icon"
+                />
+                <a href="#" class="nav-link">Reminders</a>
+              </li>
+              <li class="nav-item flex">
+                <img
+                  src="./static/images/icon-planning.svg"
+                  alt="planning icon"
+                  class="nav-icon"
+                />
+                <a href="#" class="nav-link">Planning</a>
+              </li>
+            </ul>
+          </li>
+          <li aria-expanded="false" class="nav-item">
+            <a href="#" class="nav-link nav-item--button">Company</a>
+            <ul
+              data-anchor="left"
+              role="list"
+              class="nav-list nav-list--collapse flex"
+            >
+              <li class="nav-item">
+                <a href="#" class="nav-link">History</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Blog</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        </ul>
+        <ul role="list" class="nav-list flex">
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-text">Login</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-button">Register</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <section class="hero container grid">
+        <div class="hero-image">
+          <img
+            src="./static/images/image-hero-mobile.png"
+            alt="hero"
+            class="hero-image--mobile"
+          />
+          <img
+            src="./static/images/image-hero-desktop.png"
+            alt="hero"
+            class="hero-image--desktop"
+          />
+        </div>
+        <div class="hero-content flex">
+          <h1 class="fs-heading fw-bold text-primary">Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <a href="#" class="call-to-action bg-primary text-light">
+            Learn more
+          </a>
+          <ul role="list" class="client-list flex">
+            <li class="client-item">
+              <img
+                src="./static/images/client-databiz.svg"
+                alt="databiz logo"
+                class="client-logo"
+              />
+            </li>
+            <li class="client-item">
+              <img
+                src="./static/images/client-audiophile.svg"
+                alt="audiophile logo"
+                class="client-logo"
+              />
+            </li>
+            <li class="client-item">
+              <img
+                src="./static/images/client-meet.svg"
+                alt="meet logo"
+                class="client-logo"
+              />
+            </li>
+            <li class="client-item">
+              <img
+                src="./static/images/client-maker.svg"
+                alt="marker logo"
+                class="client-logo"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/boonyarit-iamsaard" target="_blank"
+        >Boonyarit Iamsa-ard</a
+      >.
+    </footer>
+  </body>
+</html>
