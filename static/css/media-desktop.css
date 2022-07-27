@@ -1,0 +1,61 @@
+@media screen and (min-width: 900px) {
+  :root {
+    --fs-400: 1.125rem;
+  }
+
+  .container {
+    width: min(100%, calc(1145px + 5rem));
+  }
+
+  .primary-header {
+    padding-inline: 2.5rem;
+  }
+
+  .primary-header,
+  .primary-navigation > .nav-list:nth-of-type(2) {
+    --gap: 2.5rem;
+  }
+
+  .main-container {
+    align-self: center;
+  }
+
+  .hero {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: end;
+    padding-inline: 2.5rem;
+  }
+
+  .hero-image,
+  .hero-content {
+    grid-row: 1 / span 1;
+  }
+
+  .hero-image {
+    grid-column: 2 / span 1;
+  }
+
+  .hero-image--desktop {
+    display: block;
+    margin-left: auto;
+    max-width: 30rem;
+  }
+
+  .hero-image--mobile {
+    display: none;
+  }
+
+  .hero-content {
+    --gap: 4rem;
+    grid-column: 1 / span 1;
+    padding-inline: 0 2rem;
+  }
+
+  .hero-content > h1 {
+    text-align: left;
+  }
+
+  .client-list {
+    --gap: 1rem;
+  }
+}
