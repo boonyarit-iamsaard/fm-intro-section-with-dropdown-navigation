@@ -47,7 +47,41 @@ Users should be able to:
 
 ### What I learned
 
--
+Reduce render-blocking resources using media attributes for conditional CSS
+
+See the code snippet below:
+
+```html
+<!-- Use the media attribute for conditional CSS -->
+<link rel="stylesheet" media="screen" href="./static/css/main.css" />
+<link
+  rel="stylesheet"
+  media="screen and (max-width: 899px)"
+  href="./static/css/media-mobile.css"
+/>
+<link
+  rel="stylesheet"
+  media="screen and (min-width: 900px)"
+  href="./static/css/media-desktop.css"
+/>
+```
+
+Use the [Google Web Fonts Helper](https://google-webfonts-helper.herokuapp.com/fonts) to generate local `@font-face`
+
+See the code snippet below:
+
+```css
+/* epilogue-500 - latin */
+@font-face {
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(''),
+    url('./static/fonts/epilogue-v13-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('./static/fonts/epilogue-v13-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+```
 
 ### Continued development
 
